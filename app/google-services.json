@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615585105656",
+    "project_id": "chhotasaman",
+    "storage_bucket": "chhotasaman.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615585105656:android:1baca5d10ac955874f9d0d",
+        "android_client_info": {
+          "package_name": "com.example.sitara"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI8prhIXelpJ2LL-JLsqIPYoRfik1zyrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
