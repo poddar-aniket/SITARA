@@ -47,12 +47,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-//    implementation ("com.google.firebase:firebase-bom:33.8.0")
+    implementation ("com.google.firebase:firebase-bom:33.8.0")
 //    implementation("com.cloudinary:cloudinary-android:2.0.1")
 
 }

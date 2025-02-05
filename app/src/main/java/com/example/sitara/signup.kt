@@ -47,9 +47,10 @@ class signup : AppCompatActivity() {
 
     }
     fun signupwithfirebase(email : String , pass :String,usname:String){
+        Toast.makeText(applicationContext,"aagaya",Toast.LENGTH_SHORT).show()
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(
             email,pass
-        ).addOnSuccessListener {
+        ).addOnSuccessListener{
             Toast.makeText(applicationContext,"Success",Toast.LENGTH_SHORT).show()
          it.user.let{ user ->
              if(user!=null) {
@@ -57,11 +58,7 @@ class signup : AppCompatActivity() {
                  Firebase.firestore.collection("users")
                      .document(user.uid)
                      .set(usermod).addOnSuccessListener {
-                         Toast.makeText(
-                             applicationContext,
-                             "Account created successfully",
-                             Toast.LENGTH_LONG
-                         ).show()
+                         Toast.makeText(applicationContext, "Account created successfully", Toast.LENGTH_LONG).show()
                      }
              }
          }

@@ -12,6 +12,7 @@ import com.example.sitara.databinding.ActivityLoginBinding
 import com.example.sitara.model.uploader
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuth.*
 import com.google.firebase.firestore.firestore
 
 class loginActivity : AppCompatActivity() {
@@ -38,6 +39,7 @@ class loginActivity : AppCompatActivity() {
         var ide=binding.usemail.text.toString()
         var pass=binding.pass.text.toString()
         if(!Patterns.EMAIL_ADDRESS.matcher(ide).matches()){
+
             binding.usemail.setError("email not valid")
             return
         }
@@ -49,9 +51,9 @@ class loginActivity : AppCompatActivity() {
     }
 
     fun loginwithfirebase(email : String , pass :String){
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(
+       FirebaseAuth.getInstance().signInWithEmailAndPassword(
             email,pass
-        ).addOnSuccessListener {
+        ).addOnSuccessListener{
             Toast.makeText(applicationContext,"login Successfully", Toast.LENGTH_SHORT).show()
             var intent=Intent(applicationContext,videoupload::class.java)
             startActivity(intent)
