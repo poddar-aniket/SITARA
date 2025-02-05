@@ -6,25 +6,24 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.sitara.databinding.ActivityMainBinding
 import com.example.sitara.databinding.ActivityPage3Binding
+import com.example.sitara.databinding.ActivityPage4Binding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+class page3 : AppCompatActivity() {
+    lateinit var binding: ActivityPage3Binding
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding=ActivityPage3Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        binding=ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
-        binding.imageView4.setOnClickListener {
-            val intent= Intent(this,ActivityPage3Binding::class.java)
+        binding.textView11.setOnClickListener {
+            var intent=Intent(this,page2::class.java)
             startActivity(intent)
-
         }
-        binding.imageView3.setOnClickListener {
-            val intent= Intent(this,ActivityPage3Binding::class.java)
-            startActivity(intent)
-
+        binding.button.setOnClickListener {
+            var i = Intent(this,ActivityPage4Binding::class.java)
+            startActivity(i)
         }
+
     }
 }
