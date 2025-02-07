@@ -22,7 +22,7 @@ class loginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-        binding.textView9.setOnClickListener {
+        binding.textView11.setOnClickListener {
          var intent=Intent(this,signup::class.java)
          startActivity(intent)
 

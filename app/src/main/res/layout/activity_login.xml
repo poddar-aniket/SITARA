@@ -5,121 +5,154 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
     tools:context=".loginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="391dp"
-        android:layout_height="783dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/newbg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="369dp"
-            android:layout_height="112dp"
-            android:fontFamily="cursive"
-            android:text="Your Secret Skills, Ready to Dazzle!"
-            android:textAlignment="viewStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#2F2929"
+            android:text="Skills unlocked. Opportunities discovered"
+            android:textAlignment="center"
+            android:textSize="20sp"
             android:textStyle="bold|italic"
-            app:autoSizeTextType="uniform"
+            app:autoSizeTextType="none"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.336" />
+            app:layout_constraintVertical_bias="0.332" />
 
         <EditText
             android:id="@+id/pass"
-            android:layout_width="246dp"
+            android:layout_width="282dp"
             android:layout_height="47dp"
+            android:background="#F6DC90"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:drawablePadding="10dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:shadowColor="#312020"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.634" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="272dp"
-            android:layout_height="52dp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Log in"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            app:autoSizeTextType="uniform"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.658" />
 
         <EditText
             android:id="@+id/usemail"
-            android:layout_width="246dp"
+            android:layout_width="282dp"
             android:layout_height="47dp"
-            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#F4DA8F"
+            android:drawableLeft="@android:drawable/sym_action_email"
+            android:drawablePadding="10dp"
             android:ems="10"
-            android:hint="Username or Email Address"
-            android:inputType="text"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:shadowColor="#312020"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.519"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
-            app:layout_constraintVertical_bias="0.032" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.575" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:text="New to Sitara? Sign Up"
+            android:text="Forgot password? "
+            android:textColor="#651FFF"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pass"
-            app:layout_constraintVertical_bias="0.47" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.784" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text=" Sign Up"
+            android:textColor="#651FFF"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.689"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.817" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="New to Sitara? "
+            android:textColor="#0C0C0D"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.817" />
 
         <androidx.constraintlayout.widget.Group
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="246dp"
-            android:layout_height="47dp"
-            android:text="Remember Me"
-            android:textAlignment="viewStart"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.713" />
-
         <Button
             android:id="@+id/login"
-            android:layout_width="246dp"
+            android:layout_width="282dp"
             android:layout_height="47dp"
-            android:hapticFeedbackEnabled="true"
-            android:shadowColor="#995959"
+            android:background="#664FA3"
+            android:shadowColor="#312020"
             android:text="Log in"
+            android:textColorLink="#21B88F"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.519"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.796" />
+            app:layout_constraintVertical_bias="0.744" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Log in"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.489" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

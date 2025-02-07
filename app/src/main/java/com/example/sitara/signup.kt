@@ -22,39 +22,38 @@ class signup : AppCompatActivity() {
         binding=ActivitySignupBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
-        binding.textView9.setOnClickListener {
+        binding.textView8.setOnClickListener {
             var i=Intent(this,loginActivity::class.java)
             startActivity(i)
         }
-      binding.button.setOnClickListener {
+      binding.signup.setOnClickListener {
           signup()
       }
     }
 
    fun signup(){
-        var email=binding.emailinpt.text.toString()
-        var pass=binding.passwordinpt.text.toString()
-        var use=binding.user.text.toString()
+        var email=binding.usemail.text.toString()
+        var password=binding.pass.text.toString()
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            binding.emailinpt.setError("email not valid")
+            binding.usemail.setError("email not valid")
             return
         }
-        if(pass.length<6){
-            binding.passwordinpt.setError("Minimum 6 characters")
+        if(password.length<6){
+            binding.pass.setError("Minimum 6 characters")
             return
         }
-        signupwithfirebase(email,pass,use)
+        signupwithfirebase(email,password)
 
     }
-    fun signupwithfirebase(email : String , pass :String,usname:String){
+    fun signupwithfirebase(themail : String , thepass :String){
         Toast.makeText(applicationContext,"aagaya",Toast.LENGTH_SHORT).show()
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-            email,pass
+            themail,thepass
         ).addOnSuccessListener{
             Toast.makeText(applicationContext,"Success",Toast.LENGTH_SHORT).show()
          it.user.let{ user ->
              if(user!=null) {
-                 val usermod = uploader(user.uid, email, usname)
+                 val usermod = uploader(user.uid, themail)
                  Firebase.firestore.collection("users")
                      .document(user.uid)
                      .set(usermod).addOnSuccessListener {
