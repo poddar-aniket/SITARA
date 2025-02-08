@@ -10,14 +10,7 @@ Sitara is an innovative platform that connects skilled individuals with those wh
 - Firebase and Room database for efficient data management.
 - Smooth UI/UX designed using XML.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/sitara.git
-   ```
-2. Open the project in **Android Studio**.
-3. Install dependencies and sync Gradle files.
-4. Run the app on an emulator or a physical device.
+
 
 ## Technology Stack
 - **Kotlin** - Backend development
@@ -32,8 +25,6 @@ Sitara is an innovative platform that connects skilled individuals with those wh
 - [Vaibhav](https://github.com/vaibhav3304)  
 - [Aniket Poddar](https://github.com/poddar-aniket)  
 
-## License
-This project is licensed under the **MIT License**.
 
 ## Made At
 ![DevJam 2025](image.png)
