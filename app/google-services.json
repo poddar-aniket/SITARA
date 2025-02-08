@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "615585105656",
-    "project_id": "chhotasaman",
-    "storage_bucket": "chhotasaman.firebasestorage.app"
+    "project_number": "861357867374",
+    "project_id": "staaaar132",
+    "storage_bucket": "staaaar132.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:615585105656:android:1baca5d10ac955874f9d0d",
+        "mobilesdk_app_id": "1:861357867374:android:da681580ee53e26bb4417f",
         "android_client_info": {
-          "package_name": "com.example.sitara"
+          "package_name": "com.example.star"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCI8prhIXelpJ2LL-JLsqIPYoRfik1zyrg"
+          "current_key": "AIzaSyAK6hDOpiz8BzJIoPJAanI6AYIJhDwj8m4"
         }
       ],
       "services": {

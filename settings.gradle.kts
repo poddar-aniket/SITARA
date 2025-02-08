@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "sitara"
+rootProject.name = "star"
 include(":app")
  
