@@ -25,6 +25,5 @@ Sitara is an innovative platform that connects skilled individuals with those wh
 - [Vaibhav](https://github.com/vaibhav3304)  
 - [Aniket Poddar](https://github.com/poddar-aniket)  
 
-
 ## Made At
-![DevJam 2025](image.png)
+[![DevJam 2025](image.png)](https://weekendofcode.computercodingclub.in/)
